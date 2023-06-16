@@ -1,0 +1,39 @@
+{
+  "name": "parallax-tilt",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopContainer",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ExodiusStudios.comment-anchors",
+        "usernamehw.errorlens",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "mkxml.vscode-filesize",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "explorer.compactFolders": false,
+        "explorer.autoRevealExclude": {
+          "**/node_modules": true,
+          "**/bower_components": true
+        },
+        "editor.tabSize": 2,
+        "files.eol": "\n",
+        "editor.trimAutoWhitespace": true
+      }
+    }
+  }
+}

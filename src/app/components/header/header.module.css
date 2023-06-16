@@ -1,0 +1,43 @@
+.header {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: rgba(0 0 0 / 0.3);
+}
+
+.header nav,
+.header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  padding: 1ch 2rem;
+}
+
+.header ul li *:is(a) {
+  color: white;
+}
+
+.header nav {
+  justify-content: space-between;
+}
+
+.header img {
+  height: 100%;
+}
+
+.header ul {
+  gap: 2ch;
+}
+
+.header ul .bar {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-content: center;
+  background: rgba(255 255 255 / 0.2);
+  border-radius: 50%;
+}
